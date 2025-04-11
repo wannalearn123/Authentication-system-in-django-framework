@@ -7,6 +7,6 @@ How to use it:
 3. Install python from internet
 4. put the directory inside the new folder
 5. create python venv with 'python -m .venv .venv'
-6. install library from requirement.txt
+6. install django framework with 'pip install django'
 7. open file /myapp folder
 8. run python.exe manage.py runserver
