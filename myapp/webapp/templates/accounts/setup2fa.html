@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Setup 2FA</title>
+</head>
+<body>
+    <h2>Setup Two-Factor Authentication</h2>
+    <p>Scan this QR code with your authenticator app (e.g., Google Authenticator):</p>
+    <img src="data:image/png;base64,{{ qr_image }}" alt="QR Code">
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirm Setup</button>
+    </form>
+</body>
+</html>

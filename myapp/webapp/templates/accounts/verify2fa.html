@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify Email 2FA</title>
+</head>
+<body>
+    <h2>Enter Email Code</h2>
+    <p>Check your email for the 6-digit code.</p>
+    <form method="post">
+        {% csrf_token %}
+        <p>Code: <input type="text" name="code"></p>
+        <button type="submit">Verify</button>
+    </form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
